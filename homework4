@@ -1,0 +1,21 @@
+tup1 = (4, 3, 2, 2, -1, 18)
+tup2 = (2, 4, 8, 8, 3, 2, 9)
+def multiply_tuple_elements(tup):
+    product = 1
+    for num in tup:
+        product *= num
+    return product
+print("Product of tup1:", multiply_tuple_elements(tup1))
+print("Product of tup2:", multiply_tuple_elements(tup2))
+
+def process_range(start, end):
+    squares = [i**2 for i in range(start, end)]  
+    odd_squares = [num for num in squares if num % 2 != 0]
+    even_squares = [num for num in squares if num % 2 == 0]
+    print("All squares:", squares)
+    print("Odd squares:", odd_squares)
+    print("Even squares:", even_squares)
+start_num = int(input("Enter start of range: "))
+end_num = int(input("Enter end of range: "))
+process_range(start_num, end_num)
+
